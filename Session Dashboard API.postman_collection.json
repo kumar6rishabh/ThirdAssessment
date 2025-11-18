@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "080295b2-2047-43cd-8f06-02fb6a31c67f",
+		"name": "Session Dashboard API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50156090",
+		"_collection_link": "https://kumar6rishabhsiliguri-600011.postman.co/workspace/Rishabh-Kumar's-Workspace~5946e11e-093b-4102-812c-1bfb581ebf3b/collection/50156090-080295b2-2047-43cd-8f06-02fb6a31c67f?action=share&source=collection_link&creator=50156090"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login-Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"adminuser\",\r\n    \"password\": \"adminpassword123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
